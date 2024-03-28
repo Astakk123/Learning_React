@@ -1,5 +1,4 @@
-
-// this is second class where we are learning how to import in different file and little editing
+// here we are importing the file where we write the code tha is app.jsx we are doing it in react usit vite
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -11,5 +10,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
-
-// here the React.StrictMode is ised for developer we shluld use it if we don't then no prob
