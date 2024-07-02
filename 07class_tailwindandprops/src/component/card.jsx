@@ -20,20 +20,20 @@ then we can pass this variable to the desired place in the card component html r
 
 // function Card(props) {            // we were using it before destructure but it is the original 
 // function Card({Username, touch="touch me"}) {
-function Card({someuser, btn="see more"}) {
+function Card({ someuser, btn = "see more" }) {
 
     // console.log(someObject)    // this was used to know whether it is accessing or not
     // touch="touch me" is used to default if someone didn't use then it will automatically got set there 
-   /* 
-   we get this when we console props
-    Object[[Prototype]]: Object card.jsx: 10
-    Object[[Prototype]]: Object card.jsx: 10
-    Object[[Prototype]]: Object card.jsx: 10
-    Object
-    Here the props is empty we can't access anything to show 
-    when we pass the value in the imported cardfunction execution in this case i.e <Card/> see how 
-    when we do <Card channel = "Chai aur code" />
-    */
+    /* 
+    we get this when we console props
+     Object[[Prototype]]: Object card.jsx: 10
+     Object[[Prototype]]: Object card.jsx: 10
+     Object[[Prototype]]: Object card.jsx: 10
+     Object
+     Here the props is empty we can't access anything to show 
+     when we pass the value in the imported cardfunction execution in this case i.e <Card/> see how 
+     when we do <Card channel = "Chai aur code" />
+     */
     return (
 
         <div className="relative h-[400px] w-[300px] rounded-md">
@@ -42,7 +42,9 @@ function Card({someuser, btn="see more"}) {
                 alt="AirMax Pro"
                 class="z-0 h-full w-full rounded-md object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t 
+                from-gray-900 to-transparent">
+            </div>
             <div className="absolute bottom-4 left-4 text-left">
                 <h1 className="text-lg font-semibold text-white">{someuser.username} </h1>
                 <p className="mt-2 text-sm text-gray-300">
